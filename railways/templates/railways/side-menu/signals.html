@@ -1,0 +1,47 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Satellite Imaging for Rail Navigation (SIMRAN)</h2>
+        <p>The objective of this project is to:
+            <ul>
+            <li>develop an effective way to collect and disseminate information dynamically of every train in a given
+                geographical boundary for its location, speed and direction of movement</li>
+            <li>ensure better and selective dissemination of information to passengers. Train tracking system using
+            Global Positioning System (GPS) is being developed. Each train will have a train locator unit to receive
+            information from GPS satellites and continuously identify the position of the train with information about
+            its location (latitude and longitude values). GSM is to be used for connectivity and wherever needed as an
+            alternate location identifier. The data logger can also be used to provide services for a central train
+            enquiry system, anti- collision device, train charting etc.</li>
+            </ul>
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+    <div class="col-sm-3">
+      <p>Station Device</p>
+      <img src="{% static 'railways/images/sim1.jpg' %}" class="img-responsive margin sim" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p> Train Device </p>
+      <img src="{% static 'railways/images/sim2.jpg' %}" class="img-responsive margin sim" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>Station and Train Device</p>
+      <img src="{% static 'railways/images/sim3.jpg' %}" class="img-responsive margin sim" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>SMS Logger</p>
+      <img src="{% static 'railways/images/sim4.jpg' %}" class="img-responsive margin sim" style="width:100%" alt="Image">
+    </div>
+        <div class="col-sm-2"></div>
+    <div class="col-sm-8 big-image">
+      <p>Screenshot of Train Tracking</p>
+      <img src="{% static 'railways/images/sim5.jpg' %}" class="img-responsive margin " style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-2"></div>
+  </div>
+</div>
+{% endblock %}

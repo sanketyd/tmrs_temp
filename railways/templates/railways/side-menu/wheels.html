@@ -1,0 +1,32 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Wheels And Axles Of Improved Metallurgy </h2>
+        <p>
+            This project envisages developing steel of improved metallurgy for wheels and axles for better safety,
+            reliability and enhanced carrying capacity without substantially altering design parameters. This is a
+            large size project considering that Indian Railways currently have a population constituting of 1440000
+            wagons wheels, 280000 coach wheels, 72000 locomotives wheels and half the number of axles for each of the
+            two; additionally several thousand new wheels are needed every year. The procedure adopted involves
+            identification of steel compositions, appropriate laboratory scale trials followed by varying processing
+            parameters for the purpose of controlling the microstructures of steels produced. Subsequently, their
+            tensile properties, toughness, fatigue resistance and wear resistance are evaluated. The next step is
+            production of steel samples on the pilot scale under optimized processing parameters. Data analysis and
+            review is to be further carried out to standardize new processing parameters.
+        </p>
+
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-2"></div>
+        <div class="col-sm-8">
+          <p>Flow Process of Forging Followed by Rim-Quenching</p>
+          <img src="{% static 'railways/images/wheel.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+</div>
+{% endblock %}

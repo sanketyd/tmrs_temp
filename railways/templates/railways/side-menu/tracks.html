@@ -1,0 +1,54 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Track Side Bogie Monitoring System</h2>
+        <p>The objectives of this project include
+        <ul>
+            <li>development of an automated system to be installed along the track
+            for detecting faults in bogies of rolling stock (on-line monitoring of the condition of bogies)</li>
+            <li> measurement of lateral and vertical rail forces </li>
+            <li>automatic vehicle identification using RFIDs </li>
+            <li>development of instrumentation for detection of components of the rolling stock which may cause derailment</li>
+        </ul>
+
+            Reprofiling and replacing worn wheel sets constitutes a significant portion of rolling stock maintenance
+            costs. Misaligned wheel sets are also responsible for increased fuel consumption and accelerated track
+            deterioration. Typically about 5% of wheel sets have abnormal behavior. The misaligned wheel sets represent
+            a serious safety risk and hence earliest detection of misaligned wheel sets is essential. The automated system
+            would measure the angle-of-attack (AOA), and tracking position (TP) of every passing wheel from which the
+            inter-axle misalignment (IAM) and tracking error (TE) of wheel sets would be determined. Another way of
+            monitoring the condition of a bogie is by measuring the vertical and horizontal rail forces using strain
+            gages. This would enable the trackside system to monitor abnormal bogie behavior.<br>
+
+            It is important to uniquely identify the vehicle whose bogie has abnormal behavior.
+            RFID (Radio frequency identification) tags will be fitted on coaches/wagons for automatic vehicle
+            identification.<br>
+
+            Occasionally, parts of rolling stock come off due to failure of fastening. These are normally detected by
+            visual inspection. Falling parts may also cause derailment and hence there is a need for their automatic
+            detection and warning.<br>
+
+            The project also envisages the use of an RF modem to communicate to the signal control
+            room regarding abnormal behavior of bogies for necessary action. The relevant data collected
+            by the automated system for every passing train will also be sent for their record.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>Laser Range Finder</p>
+          <img src="{% static 'railways/images/track1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Data acquisition in progress</p>
+          <img src="{% static 'railways/images/track2.jpg' %}" class="img-responsive margin center-block" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

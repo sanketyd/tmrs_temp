@@ -1,0 +1,36 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Sensors for Detecting Hotboxes and Hot Wheels</h2>
+        <p>
+            Most derailments can be traced to either the failure of wheel bearings or brake binding. Both conditions lead
+            to overheating followed by seizure which in turn can cause wheel flats, track damage and derailment. Hot
+            Axle and Box Detection (HABD) systems are used globally for the purpose. These rely on remote measurement
+            of temperatures of the bearing boxes and the wheels. These systems have to be capable of measuring the
+            temperatures very fast (at 200 kmph the measurement of a minimum of 10 points has to be made within 0.004
+            second). Any system to be used in India has to be designed to cope with climatic extremes.<br>
+
+            A HABD system has been developed and tested. Industry partners have been identified and a prototype system
+            is under fabrication. The system uses state of the art technology throughout. Data will also be available
+            for integration into the signaling network of the Indian Railways.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>Proximity Sensors</p>
+          <img src="{% static 'railways/images/sensor1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Wheel & Box Pyrometer Housing</p>
+          <img src="{% static 'railways/images/sensor2.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

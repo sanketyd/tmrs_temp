@@ -1,0 +1,41 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">On Board Diagnostics</h2>
+        <p>
+            The objective of the project is to develop an On-board Diagnostics for Diesel and Electric locomotives
+            through a network based real time control system. Diagnostics on existing locomotives is presently confined
+            to the trouble shooting knowledge of the driver. The exercise includes development of appropriate
+            instrumentation and signal processing strategy for various equipments which form part of the transmission
+            and also for other auxiliary machines on board the locomotives. It will enable real time monitoring of vital
+            locomotive equipments like prime mover, rotating machines, traction motor suspension bearings, axle
+            bearings, radiator drive, air compressor, transformer, tap changer, pantograph, etc on electric/diesel
+            locomotives. The system will also have self-diagnostic features.<br>
+
+            Typical problems in diesel and electric locomotive rotating machinery includes vibration of traction motor,
+            compressors, cooling fans, axle bearing etc. The diagnostic system will include on-line data acquisition and
+            display over multiple channels simultaneously, Frequency analysis and Real-time FFT display, On-line trending
+            analysis, On-screen trend display, Data storage with date-time information, Safe and tolerable limits for
+            all channels, Automatic visual and audio alarm in case of limit crossing. The system also includes
+            algorithmic diagnosis and communication through mobile network from the locomotive to central control unit.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>Pressure Transducer</p>
+          <img src="{% static 'railways/images/diag1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Brake Pipe Pressure Indicator</p>
+          <img src="{% static 'railways/images/diag2.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

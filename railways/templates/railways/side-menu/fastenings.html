@@ -1,0 +1,43 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Corrosion Prevention of Rails</h2>
+        <p>
+            The rail fastenings consist of an elastic rail clip (ERC), a metal or plastic liner and a rubber sole pad.
+            The sole pad is placed between the rail and the concrete sleeper. It isolates the shock on the rail, dampens
+            the vibrations and acts as an insulator where required. The ERC provides the toe load on the rail foot,
+            giving the binding force between the rails and the sleeper. The liner is placed between the ERC and the
+            rail foot, acting as a spacer and provides adjustments. It is made of glass filled nylon (GFN) where
+            insulation is required and is metallic if no insulation is needed.</p>
+
+            <p>Proposed increased axle load and operating speeds put higher demands on the components. Higher toe load
+                capacity should be provided. This results in higher stresses in the ERC and the liner and reduces their
+                fatigue life. The sole pad should provide enhanced vibration and shock isolation. These require
+                modifications in the design of the three components.</p>
+
+            <p>The aim of the project is to improve the design in order to handle increased demands. It also seeks to
+                increase the life of the three components to reduce the maintenance costs. The existing design has been
+                tested in field and laboratory to evaluate its performance and to find ways for improvements. New
+                materials and shapes are being tried to obtain desired improvement. The material and the shape of the
+                rubber pad have been changed and prototypes have been made for laboratory evaluations. Work on the other
+                two components is in an advanced stage of development.</p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>Rail Clip fastening</p>
+          <img src="{% static 'railways/images/fast1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Elastic Rail Clip Analysis</p>
+          <img src="{% static 'railways/images/fast2.jpg' %}" class="img-responsive margin center-block" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

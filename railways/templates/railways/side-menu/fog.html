@@ -1,0 +1,38 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Fog Vision Instrumentation </h2>
+        <p>
+            The project envisages development of instrumentation for improving the visibility during foggy weather,
+            night and bad weather conditions by developing a Fog vision system. Train movement gets severely hampered
+            during foggy climatic conditions. The weather conditions consistently worsen with fog getting more opaque
+            and such weather conditions extends for months. Instrumentation technology needs to be developed to enable
+            the train driver to see through the fog for uninterrupted and safe train operation. After examining several
+            options such as Radar (mm-wave), Radiometer (mm-wave), Radiometer (infrared), Sonar(ultrasonic), etc, it
+            has been concluded that laser based viewing systems will be most suited for the Fog Vision Application.
+            Information like position of obstacles on the track ahead should be made available on the graphical console
+            display. The distance covered should be at least equal to the normal distance visible due to the driver
+            under normal night conditions. Optical visibility may become nearly zero in severe fog conditions. Hence,
+            sensors with fog penetration capability should be developed and data from them processed to give an
+            enhanced image of the track ahead on a console. There may be requirement for developing multiple types
+            of sensors to cater to different scenarios. In such cases, data from multiple sensors should be used
+            intelligently to give a single display on the console. Active Infrared stereo vision using gating will
+            enable the enhancement of infrared viewing under heavy attenuation in foggy conditions.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+    <div class="col-sm-4">
+      <p>Power Requirement Graph</p>
+      <img src="{% static 'railways/images/fog1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-8">
+      <p>The Fog Chamber</p>
+      <img src="{% static 'railways/images/fog2.jpg' %}" class="img-responsive margin center-block" style="width:80%" alt="Image">
+    </div>
+  </div>
+</div>
+{% endblock %}

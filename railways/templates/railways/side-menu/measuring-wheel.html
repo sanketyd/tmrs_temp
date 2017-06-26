@@ -1,0 +1,40 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Measuring Wheel Technology</h2>
+        <p>
+            In this project instrumented wheel-sets are to be developed for measurement of instantaneous vertical and
+            horizontal forces at the rail-wheel contact point. Seperate instrumented wheel-sets are being developed
+            for locomotive, coach and wagon. These sets would be employed for purposes of certification of vehicles
+            as well as in the development of anti-derailment devices. Development of an instrumented wheel is important
+            for a variety of safety related reasons. The instrumented wheel-set will measure lateral and vertical forces
+            and strains between a wheel flange and the rail-head. The relative magnitudes of the horizontal and vertical
+            forces and their frequency characteristics hold the key to understanding of various wheel-track phenomenons.
+            The Measuring Wheel is expected to serve as a major tool for carrying out studies on rail-wheel interactive
+            forces, derailment analysis, wheel profile optimization, bogie hunting etc. Measuring Wheel is also essential
+            for analysis of various types of stresses coming on rail and wheels during introduction of any new rolling
+            stock in Indian Railways. The instrumentation will include strain-gauging and piezoelectric devices which
+            will sense various dynamic phenomenons and transmit signals through telemetry. Equipment and the processors
+            of primary handling data will be located on the axle of wheel-set. Information from the rotating wheel pair
+            will be transmitted in a digital code inside the coach for registration and processing.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>FEM of the wheel axle set </p>
+          <img src="{% static 'railways/images/measure1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Vertica & Lateral forces on the engine wheel</p>
+          <img src="{% static 'railways/images/measure2.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

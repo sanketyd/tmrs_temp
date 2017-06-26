@@ -1,0 +1,42 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Corrosion Prevention of Rails</h2>
+        <p>Corrosion problem of rails concerns:
+	    <ul>
+          <li>Rail foot corrosion under the glass filled nylon/mild steel liner due to accumulation of corrosive
+              environment under the liners.</li>
+          <li>Jamming of the elastic rail clip (ERC) in the insert</li>
+          <li>Corrosion of the weld region</li>
+	    </ul>
+		<p>The gradual thinning of rail foot leads to frequent rail replacements and is a safety issue. Corrosion of
+            the ERC in the insert leads to jamming of ERC, resulting in loss of toe load. Field studies of corrosion
+            have been conducted and various types of corrosion mechanisms have been identified. Corrosion prevention
+            methods to protect the existing rails from corrosion at the liner locations are being devised, experimented
+            and implemented in the field. Another aim of the project is the development of new corrosion resistant rail
+            steel alloy chemistry to minimize corrosion of rails under liner locations. This is being done in
+            collaboration with SAIL, the industry partner in the project. New corrosion resistant rail steels will be
+            identified based on laboratory experiments of trial compositions. Trial rails will be manufactured and
+            subjected to field studies. Based on these results, the corrosion resistant rails can be adopted by Indian
+            Railways.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>Field sample showing corrosion under liner</p>
+          <img src="{% static 'railways/images/corr1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Experimental setup for evaluating crevice corrosion</p>
+          <img src="{% static 'railways/images/corr2.jpg' %}" class="img-responsive margin center-block" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

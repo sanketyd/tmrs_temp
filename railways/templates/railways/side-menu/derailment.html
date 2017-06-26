@@ -1,0 +1,36 @@
+{% extends 'railways/base.html' %}
+{% load static %}
+
+{% block content %}
+    <div class="container">
+        <h2 class="margin">Derailment Detection Devices</h2>
+        <p>
+            This project envisages development of On-Board equipment for sensing derailment possibilities of rolling
+            stock. Development includes appropriate instrumentation and signal processing strategy and its integration
+            with the existing brake mechanism for minimizing losses due to dragging of derailed vehicle. Presently there
+            is no instrumentation on Indian Railways for detecting derailment possibilities.<br>
+
+            The process of derailment is characterized by heavy misalignment of the axle along with large oscillations and jerks.
+            Vehicle dynamics software packages are being employed to carry out simulation of vehicles running on new or
+            worn wheels. MEMS sensors for detecting vertical, horizontal accelerations and tilting have been identified
+            and test runs are being conducted on Northern Railways. Recorded data is to be employed to arrive at a
+            suitable criteria for derailment detection.
+        </p>
+    </div>
+
+<div class="container text-center image-grid">
+    <div class="row thumbnails">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-4">
+          <p>Placement of Sensors</p>
+          <img src="{% static 'railways/images/derail1.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-2"></div>
+        <div class="col-sm-4">
+          <p>Bogie acceleration at 60 kmph</p>
+          <img src="{% static 'railways/images/derail2.jpg' %}" class="img-responsive margin" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+</div>
+{% endblock %}

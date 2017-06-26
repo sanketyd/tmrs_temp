@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+
+        <!--bootstrap css-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			<!-- foonts-->
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+
+        <!-- Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Roboto" rel="stylesheet">
+
+        <!-- css -->
+        <link rel="stylesheet" type="text/css" href="{% static 'railways/styles/styles.css' %}"/>
+        <link rel="stylesheet" href="{% static 'railways/font-awesome-4.7.0/css/font-awesome.min.css' %}">
+
+        <!--jquery and bootstrap-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+
+	<body>
+		<div class="welcome-header">
+			<p>TECHNOLOGY MISSION ON RAILWAY SAFETY</p>
+			<img src="{% static 'railways/Images/logo.gif' %}" class="right-logo" />
+		</div>
+		<div class="navigation-bar">
+			<ul class="navbar-entries">
+				<li>
+					<a href="{% url 'railways:index' %}">
+						<i class="fa fa-home" aria-hidden="true"></i>
+						<div><p class="short-desc">HOME</p></div>
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'railways:goals' %}">
+						<i class="fa fa-bullseye" aria-hidden="true"></i>
+						<div><p class="short-desc">GOALS</p></div>
+					</a>
+				</li>
+				<li class="multimenu-sidebar">
+					<a class="highlight-grp extension" href="#">
+						<i class="fa fa-train" aria-hidden="true"></i>
+						<div><p class="short-desc">PROJECTS</p></div>
+					</a>
+
+
+                    <ul class="side-extension">
+
+						<!-- This option has 7 other sub options -->
+						<li class="seven-options">
+							<a>Traction & Rolling Stock</a>
+							<ul class="extra-menu">
+								<li><a href="{% url 'railways:tracks' %}">Track Side Bogie Monitoring System</a></li>
+								<li><a href="{% url 'railways:derailment' %}">Derailment Detection Devices</a></li>
+								<li><a href="{% url 'railways:sensors' %}">Sensors for HotBoxes, Hot Wheels</a></li>
+								<li><a href="{% url 'railways:diagnostics' %}">On Board Diagnostics</a></li>
+								<li><a href="{% url 'railways:wheels' %}">Wheels And Axles of Improved Metallurgy</a></li>
+								<li><a href="{% url 'railways:measuring-wheel' %}">Measuring Wheel Technology</a></li>
+								<li><a href="{% url 'railways:toilets' %}">Environment Friendly Railway Toilet System</a></li>
+							</ul>
+							<i class="fa fa-caret-down" aria-hidden="true"></i>
+						</li>
+
+
+						<!-- This option has 3 other sub options -->
+						<li class="three-options">
+							<a>Tracks & Bridges</a>
+							<i class="fa fa-caret-down" aria-hidden="true"></i>
+							<ul class="extra-menu">
+								<li><a href="{% url 'railways:corrosion' %}">Corrosion Prevention of Rails</a></li>
+								<li><a href="{% url 'railways:fastenings' %}">Improved Rail Fastenings</a></li>
+								<li><a href="{% url 'railways:flaws' %}">Rail Flaw Detection Instrumentation</a></li>
+							</ul>
+						</li>
+
+
+						<li><a href="{% url 'railways:signals' %}">Signals & Communication</a></li>
+						<li><a href="{% url 'railways:fog' %}">Fog Vision Instrumentation</a></li>
+					</ul>
+				</li>
+				<li>
+					<a href="{% url 'railways:budget' %}">
+						<i class="fa fa-inr" aria-hidden="true"></i>
+						<div><p class="short-desc">BUDGET</p></div>
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'railways:media' %}">
+						<i class="fa fa-newspaper-o" aria-hidden="true"></i>
+						<div><p class="short-desc">MEDIA</p></div>
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'railways:contacts' %}">
+						<i class="fa fa-phone" aria-hidden="true"></i>
+						<div><p class="short-desc">CONTACTS</p></div>
+					</a>
+				</li>
+				<li>
+					<a href="{% url 'railways:stats' %}">
+						<i class="fa fa-file" aria-hidden="true"></i>
+						<div><p class="short-desc">STATISTICS</p></div>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="content-disp">
+            {% block content %}
+            {% endblock %}
+		</div>
+
+        <script type='text/javascript' src="{% static 'railways/js/effects.js' %}"></script>
+        <script type='text/javascript' src="{% static 'railways/js/pm.js' %}"></script>
+				<script type='text/javascript' src="{% static 'railways/js/news.js' %}"></script>
+	</body>
+</html>
